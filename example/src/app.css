@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+* { margin:0; padding:0; } /* to remove the top and left whitespace */
+html, body { width:100%; height:100%; } /* just to be sure these are full screen*/
+canvas { display:block; flex-basis: 50%;} /* To remove the scrollbars */
+
+body {display:flex;}
+body > * {flex-grow:1}
+
+#settings {
+  flex-basis: 50%;
+  font-family: 'Overpass Mono', monospace;
+  overflow: auto;
+
+  padding: 1em;
+  border-left: 1px solid #DDD;
+  background: #F3F3F3;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+.actions {
+  text-align: center;
+}
+
+h2, h3, h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+}
+h2, h3 {
+  color: var(--primary-color);
+}
+h4 {
+  color: #555;
+}
+
+.rect-settings {
+  margin: 1.5em 0;
+  padding: .5em;
+  border: 1px solid #DFDFDF;
+  background-color: #f6f6f6;
+}
+.rect-settings .flex {
+  margin-top: 1em;
+  display: flex;
+}
+.rect-settings .flex > * {
+  flex-grow: 1;
+  padding: 0 1em;
+}
+
+.rect-settings .input {
+  display: flex;
+}
+.rect-settings .input > * {
+  padding: 0 0.5em;
+}
+.rect-settings input[type="range"] {
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+.rect-settings .input span:first-child, .rect-settings .label {
+  color: var(--primary-color);
+}
+.rect-settings .input span:last-child {
+  display: inline-block;
+  flex-basis: 75px;
+}
+.rect-settings ul {
+  margin: .5em 0 0 2em;
+}
+

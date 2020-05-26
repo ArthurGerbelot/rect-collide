@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rect Collide | Example</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <div id="settings">
+      <h2>Settings</h2>
+      <div class="actions">
+        <a href="#play" class="action" data-action="play"><i class="fa fa-play"></i></a>
+        <a href="#pause" class="action" data-action="pause"><i class="fa fa-pause"></i></a>
+      </div>
+
+      <!-- Setting Rect Template -->
+      <div id="rect-settings">
+        <div id="rect-settings-template" class="rect-settings" style="--primary-color: blue;">
+          <h3 class="title"></h3>
+          <div class="flex">
+            <div>
+              <h4>Position</h4>
+              <div class="input">
+                <span>X:</span>
+                <input type="range" class="x" min="0" max="1000"/>
+                <span class="x-value"></span>
+              </div>
+              <div class="input">
+                <span>Y:</span>
+                <input type="range" class="y" min="0" max="1000"/>
+                <span class="y-value"></span>
+              </div>
+            </div>
+            <div>
+              <h4>Size</h4>
+              <div class="input">
+                <span>W:</span>
+                <input type="range" class="w" min="0" max="500"/>
+                <span class="w-value"></span>
+              </div>
+              <div class="input">
+                <span>H:</span>
+                <input type="range" class="h" min="0" max="500"/>
+                <span class="h-value"></span>
+              </div>
+            </div>
+          </div>
+          <div class="flex">
+            <div>
+              <h4>Rotation</h4>
+              <div class="input">
+                <span>Angle:</span>
+                <input type="range" class="angle" min="-360" max="360"/>
+                <span class="angle-value"></span>
+              </div>
+              <div class="input">
+                <span>Speed:</span>
+                <input type="range" class="speed" min="-90" max="90"/>
+                <span class="speed-value"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
